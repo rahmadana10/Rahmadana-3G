@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1310px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+header h1 {
+    font-size: 40px;
+    color: rgb(49, 170, 168);
+}
+input {
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    width: 250px;
+    margin: 15px;
+
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+    "nav nav main main main main main"
+    "nav nav aside aside section1 section1 section2"
+    "nav nav footer footer footer footer footer";
+}
+nav {
+    grid-area: nav;
+    width: 200px;
+    height: auto;
+    padding: 47px 0px;
+    margin-left: 40px;
+    background-color: rgb(69, 219, 224);
+    border-radius: 7px;
+}
+nav a{
+    display: block;
+    padding: 19px 53px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: rgb(128, 186, 243);
+    color: black;
+}
+nav .keluar {
+    color: brown;
+}
+main {
+    grid-area: main;
+    width: 1075px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(128, 200, 255);
+    margin-left: 1rem;
+    color: white;
+    border-radius: 5px;
+}
+.tittle {
+    margin-left: 10px;
+    color: white;
+}
+.tittle p {
+    margin-top: 10px;
+}
+.foto img {
+    width: 130px;
+    height: 130px;
+    margin: 1rem;
+    border-radius: 50%;
+    align-items: center;
+}
+aside {
+    grid-area: aside;
+    width: 500px;
+    margin-left: 1rem;
+    background-color: rgb(180, 238, 248);
+    margin-top: 10px;
+    border-radius: 7px;
+}
+aside h3 {
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+aside img {
+    width: 450px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+.section1 {
+    grid-area: section1;
+    margin-top: 9px;
+    border-radius: 5px;
+    background-color: rgb(180, 238, 248);
+    width: 250px;
+}
+.matkul, .aktifitas {
+    background-color: rgb(96, 193, 245);
+    border-radius: 7px;
+}
+.section1 h3, .matkul, .section2 h3, .aktifitas {
+    margin: 15px;
+}
+.matkul p, .aktifitas p {
+    margin-top: 10px;
+    margin-left: 5px;
+    color: white;
+}
+.section2 {
+    grid-area: section2;
+    margin-top: 10px;
+    width: 250px;
+    background-color: rgb(180, 238, 248);
+    border-radius: 7px;
+}
+footer {
+    grid-area: footer;
+    margin-top: 10px;
+    margin-left: 16px;
+    width: 1075px;
+    background-color:rgb(180, 238, 248);
+}
+footer h3, p{
+    margin: 20px;
+}
+footer p {
+    background-color: rgb(96, 193, 245);
+    border-radius: 7px;
+    width: auto;
+}
+footer p span {
+    color: black;
+    font-weight: bold;
+}
